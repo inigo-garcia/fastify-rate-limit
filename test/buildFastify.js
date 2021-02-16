@@ -8,6 +8,7 @@ async function buildFastify () {
   fastify.get('/', function (request, reply) {
     reply.send({ hello: 'world' })
   })
+
   await fastify.listen(3000)
   return fastify
 }
